@@ -58,7 +58,7 @@ public class ImgurTokenGenerationAPITest {
 	}
 	
 	
-	@Test
+	@Test (enabled=false)
 	public void uploadImagePostApiTest() {
 		
 		Map<String, String> clientIdMap = Token.getClientId();

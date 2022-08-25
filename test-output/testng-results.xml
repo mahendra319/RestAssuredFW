@@ -1,17 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="4" ignored="1" total="9" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3550" started-at="2022-08-22T22:50:42Z" finished-at="2022-08-22T22:50:46Z">
+  <suite name="Rest API Test Suite" duration-ms="23438" started-at="2022-08-25T17:05:08Z" finished-at="2022-08-25T17:05:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3550" started-at="2022-08-22T22:50:42Z" finished-at="2022-08-22T22:50:46Z">
-      <class name="com.qa.api.gorest.pojo.UserResult">
-        <test-method status="PASS" signature="createUserWithFullJson()[pri:0, instance:com.qa.api.gorest.pojo.UserResult@20d28811]" name="createUserWithFullJson" duration-ms="3502" started-at="2022-08-22T22:50:42Z" finished-at="2022-08-22T22:50:46Z">
+    <test name="Rest API regression Test" duration-ms="23438" started-at="2022-08-25T17:05:08Z" finished-at="2022-08-25T17:05:32Z">
+      <class name="com.qa.api.gorest.tests.CreateUserTest">
+        <test-method status="FAIL" signature="createUserApiPostTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@66c83fc8]" name="createUserApiPostTest" duration-ms="13936" started-at="2022-08-25T17:05:14Z" data-provider="getUserData" finished-at="2022-08-25T17:05:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[samhi@abc.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[java.util.ArrayList cannot be cast to java.lang.Integer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.Integer
+at com.qa.api.gorest.tests.CreateUserTest.createUserApiPostTest(CreateUserTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserWithFullJson -->
-      </class> <!-- com.qa.api.gorest.pojo.UserResult -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- createUserApiPostTest -->
+        <test-method status="FAIL" signature="createUserApiPostTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@66c83fc8]" name="createUserApiPostTest" duration-ms="1175" started-at="2022-08-25T17:05:28Z" data-provider="getUserData" finished-at="2022-08-25T17:05:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mahika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mahika@abc.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[java.util.ArrayList cannot be cast to java.lang.Integer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.Integer
+at com.qa.api.gorest.tests.CreateUserTest.createUserApiPostTest(CreateUserTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserApiPostTest -->
+        <test-method status="FAIL" signature="createUserApiPostTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@66c83fc8]" name="createUserApiPostTest" duration-ms="1082" started-at="2022-08-25T17:05:30Z" data-provider="getUserData" finished-at="2022-08-25T17:05:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karthika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[active]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthika@abc.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[java.util.ArrayList cannot be cast to java.lang.Integer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.Integer
+at com.qa.api.gorest.tests.CreateUserTest.createUserApiPostTest(CreateUserTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserApiPostTest -->
+        <test-method status="FAIL" signature="createUserApiPostTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.api.gorest.tests.CreateUserTest@66c83fc8]" name="createUserApiPostTest" duration-ms="1159" started-at="2022-08-25T17:05:31Z" data-provider="getUserData" finished-at="2022-08-25T17:05:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mahendra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[inactive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mahendra@abc.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[java.util.ArrayList cannot be cast to java.lang.Integer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.Integer
+at com.qa.api.gorest.tests.CreateUserTest.createUserApiPostTest(CreateUserTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserApiPostTest -->
+      </class> <!-- com.qa.api.gorest.tests.CreateUserTest -->
+      <class name="com.qa.api.gorest.tests.ImgurTokenGenerationAPITest">
+        <test-method status="PASS" signature="tokenSetUp()[pri:0, instance:com.qa.api.gorest.tests.ImgurTokenGenerationAPITest@621f89b8]" name="tokenSetUp" is-config="true" duration-ms="14967" started-at="2022-08-25T17:05:10Z" finished-at="2022-08-25T17:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tokenSetUp -->
+        <test-method status="PASS" signature="getAccountBlockStatusTest()[pri:0, instance:com.qa.api.gorest.tests.ImgurTokenGenerationAPITest@621f89b8]" name="getAccountBlockStatusTest" duration-ms="3409" started-at="2022-08-25T17:05:25Z" finished-at="2022-08-25T17:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAccountBlockStatusTest -->
+        <test-method status="PASS" signature="tokenSetUp()[pri:0, instance:com.qa.api.gorest.tests.ImgurTokenGenerationAPITest@621f89b8]" name="tokenSetUp" is-config="true" duration-ms="283" started-at="2022-08-25T17:05:28Z" finished-at="2022-08-25T17:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tokenSetUp -->
+        <test-method status="PASS" signature="getAccountImagesTest()[pri:0, instance:com.qa.api.gorest.tests.ImgurTokenGenerationAPITest@621f89b8]" name="getAccountImagesTest" duration-ms="320" started-at="2022-08-25T17:05:29Z" finished-at="2022-08-25T17:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAccountImagesTest -->
+      </class> <!-- com.qa.api.gorest.tests.ImgurTokenGenerationAPITest -->
+      <class name="com.qa.api.gorest.tests.GetUserTest">
+        <test-method status="PASS" signature="getAllUsersListApiTest()[pri:0, instance:com.qa.api.gorest.tests.GetUserTest@546621c4]" name="getAllUsersListApiTest" duration-ms="18419" started-at="2022-08-25T17:05:10Z" finished-at="2022-08-25T17:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersListApiTest -->
+        <test-method status="PASS" signature="getUsersListWithParamApiTest()[pri:0, instance:com.qa.api.gorest.tests.GetUserTest@546621c4]" name="getUsersListWithParamApiTest" duration-ms="1600" started-at="2022-08-25T17:05:28Z" finished-at="2022-08-25T17:05:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsersListWithParamApiTest -->
+      </class> <!-- com.qa.api.gorest.tests.GetUserTest -->
+    </test> <!-- Rest API regression Test -->
+  </suite> <!-- Rest API Test Suite -->
 </testng-results>
